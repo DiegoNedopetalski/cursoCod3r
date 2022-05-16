@@ -10,6 +10,7 @@ const sequencia = {
     }
 }
 
+
 console.log(sequencia.valor, sequencia.valor)
 sequencia.valor = 1000;
 console.log(sequencia.valor, sequencia.valor)
