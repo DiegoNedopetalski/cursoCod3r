@@ -20,6 +20,10 @@ module.exports = {
             new OptimizeCSSAssetsPlugin({})
         ]
     },
+    devServer: {
+        contentBase: './public',
+        port: 9000,
+    },
     plugins: [
         new MiniCssExtractPlugin({
             filename: 'estilo.css'
