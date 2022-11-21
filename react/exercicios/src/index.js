@@ -1,10 +1,16 @@
 import { createRoot } from 'react-dom/client';
-import BomDia from './components/BomDia'
+import { BoaNoite, BoaTarde } from './components/Multiplos';
+
 
 const container = document.getElementById('root')
 
 const root = createRoot(container)
 
-root.render(<BomDia nome='Diego'/>)
+root.render(
+    <div>
+        <BoaTarde nome="Gab"/>
+        <BoaNoite nome="Styve"/>
+    </div>
+)
 
 // $(1<h1>).html('React 2')
