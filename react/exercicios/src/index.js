@@ -1,5 +1,5 @@
 import { createRoot } from 'react-dom/client';
-import { BoaNoite, BoaTarde } from './components/Multiplos';
+import Saudacao from './components/Saudacao';
 
 
 const container = document.getElementById('root')
@@ -8,8 +8,7 @@ const root = createRoot(container)
 
 root.render(
     <div>
-        <BoaTarde nome="Gab"/>
-        <BoaNoite nome="Styve"/>
+        <Saudacao tipo="Bom dia" nome="João"/>
     </div>
 )
 
