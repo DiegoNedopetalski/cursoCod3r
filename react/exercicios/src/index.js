@@ -11,9 +11,9 @@ const root = createRoot(container)
 root.render(
     <div>
         <Pai nome="Julio" sobrenome="Menezes">
-            <Filho nome="Mylon" />
-            {/* <Filho nome="Paulo" />
-            <Filho nome="Carolina" /> */}
+            <Filho nome="Mylon"/>
+            <Filho nome="Carla" />
+            <Filho nome="Rafael" />
         </Pai>
     </div>
 )
