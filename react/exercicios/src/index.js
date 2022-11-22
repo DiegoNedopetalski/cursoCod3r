@@ -1,5 +1,7 @@
 import { createRoot } from 'react-dom/client';
-import Saudacao from './components/Saudacao';
+import Filho from './components/Filho';
+import Pai from './components/Pai';
+
 
 
 const container = document.getElementById('root')
@@ -8,7 +10,11 @@ const root = createRoot(container)
 
 root.render(
     <div>
-        <Saudacao tipo="Bom dia" nome="João"/>
+        <Pai nome="Julio" sobrenome="Menezes">
+            <Filho nome="Mylon" />
+            {/* <Filho nome="Paulo" />
+            <Filho nome="Carolina" /> */}
+        </Pai>
     </div>
 )
 
