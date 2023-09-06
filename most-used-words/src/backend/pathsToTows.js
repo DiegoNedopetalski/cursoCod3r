@@ -9,8 +9,8 @@ module.exports = paths => {
                             return `${fullText}\n${fileText}`
                         }).split("\n")
             resolve(rows)
-        } catch {
-            reject(this.rows)
+        } catch(e) {
+            reject(e)
         }
     })
 }
