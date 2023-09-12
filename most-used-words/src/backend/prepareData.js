@@ -8,6 +8,7 @@ module.exports = rows => {
                         .reduce(mergeRows)
                         .split(" ")
                         .map(word => word.toLowerCase())
+                        .map(word => word.replace("\"", ""))
 
             resolve(data)
         } catch(e) {
@@ -17,9 +18,9 @@ module.exports = rows => {
 }
 
 function filterValid(row){
-    const notNumber = !parseInt(row.trim())
-    const notEmpty = !!row.trim()
-    const notInterval = !row.includes("-->")
+    const notNumber = !parseInt(row.trim());
+    const notEmpty = !!row.trim();
+    const notInterval = !row.includes("-->");
     return notNumber && notEmpty && notInterval;
 }
 
