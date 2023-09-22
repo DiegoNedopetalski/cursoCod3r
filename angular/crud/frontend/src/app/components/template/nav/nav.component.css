@@ -3,6 +3,7 @@
     width: 200px;
 }
 
+
 .sidenav a i{
     color: #fff;
     padding: 10px;
@@ -10,10 +11,16 @@
 
 .sidenav a span{
     color: #fff;
+
 }
 
-.navlis{
+.navlist{
     display: flex;
     flex-direction: column;
     justify-content: right;
+}
+
+.content {
+    padding: 16px;
+    background-color: #fff;
 }
