@@ -1,0 +1,13 @@
+db.estados.countDocuments()
+
+db.estados.remove({ sigla: "AC"})
+
+db.estados.countDocuments()
+
+db.estados.find()
+
+db.estados.remove({ populacao: {$exists: false} }, 1 )
+
+db.estados.updateOne({sigla: "AL"}, {$set: {populacao: 16720000} } )
+
+db.estados.remove( {populacao: {$lt: 20000000} })
